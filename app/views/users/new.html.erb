@@ -1,0 +1,15 @@
+<div class="wrapper" style="display:block; margin:auto; width:40%;">
+	
+  <h1>HOMEPAGE BABY</h1>
+  <p>
+    <%= form_for(@user) do |f| %>
+    <%= f.text_field :username, placeholder: "username", class: "form-control" %>
+    <br />
+    <%= f.text_field :email, placeholder: "bob@email.com", class: "form-control" %>
+    <br />
+    <%= f.text_field :password_digest, placeholder: "mot de passe", class: "form-control" %>
+    <br />
+    <%= f.submit "Envoyer", class:"btn btn-success" %>
+    <% end %>
+  </p>
+</div>

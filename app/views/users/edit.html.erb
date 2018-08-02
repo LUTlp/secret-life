@@ -1,0 +1,14 @@
+<div class="wrapper" style="display:block; margin:auto; width:40%;">
+	
+  <h1>CHANGE YOUR PROFIL BABY</h1>
+  <p>
+    <%= form_for(@user) do |f| %>
+    <%#= f.label :username, "Enter a new username :" %>
+    <%= f.text_field :username, class: "form-control", value: @user.username %>
+    <br />
+    <%= f.text_field :email, class: "form-control", value: @user.email %>
+    <br />
+    <%= f.submit "Change", class:"btn btn-success" %>
+    <% end %>
+  </p>
+</div>
